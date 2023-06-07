@@ -26,7 +26,7 @@
     <div class="mb-3">
         <p>Current Picture</p>
         @if($item->picture)
-            <img src="{{ asset('storage/images/' . $item->picture) }}" alt="picture" style="width:300px; height:auto">
+            <img src="{{ asset('storage/images/' . $item->picture) }}" alt="picture" style="width:200px; height:200px">
         @endif
     </div>
     <div class="mb-3">

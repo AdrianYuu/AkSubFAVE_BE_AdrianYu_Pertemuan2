@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100)->required();
-            $table->string('description', 100)->required();
+            $table->string('name', 255)->required();
+            $table->string('description', 255)->required();
             $table->integer('price')->required();
-            $table->string('picture', 100)->required();
+            $table->string('picture', 255)->required();
             $table->timestamps();
         });
     }

@@ -22,7 +22,7 @@
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->description }}</td>
                 <td>Rp {{ $item->price }}</td>
-                <td><img src="{{ asset('storage/images/' . $item->picture) }}" alt="itemPicture" style="width:300px; height:auto"></td>
+                <td><img src="{{ asset('storage/images/' . $item->picture) }}" alt="itemPicture" style="width:200px; height:200px"></td>
                 <td>
                     <a href="{{ route('edit', $item->id) }}" class="btn btn-warning">Edit</a>
                     <a href="{{ route('delete', $item->id) }}" class="btn btn-danger">Delete</a>
