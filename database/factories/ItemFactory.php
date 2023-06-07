@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Item;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Faker\Factory as faker;
