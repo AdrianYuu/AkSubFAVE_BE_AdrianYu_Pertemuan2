@@ -14,7 +14,7 @@ class ItemSeeder extends Seeder
     public function run(): void
     {
         Item::factory()
-        ->count(3)
+        ->count(5)
         ->create();
     }
 }
