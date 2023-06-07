@@ -7,12 +7,12 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>#</th>
-            <th>Item Name</th>
-            <th>Item Description</th>
-            <th>Item Price</th>
-            <th>Item Picture</th>
-            <th>Action</th>
+            <th class="text-center">#</th>
+            <th class="text-center">Item Name</th>
+            <th class="text-center">Item Description</th>
+            <th class="text-center">Item Price</th>
+            <th class="text-center">Item Picture</th>
+            <th class="text-center">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -29,7 +29,7 @@
                 </td>
             </tr>
         @empty
-            <h1>There is no item!</h1>
+            <h1 class="mb-4">There is no item!</h1>
         @endforelse
     </tbody>
 </table>

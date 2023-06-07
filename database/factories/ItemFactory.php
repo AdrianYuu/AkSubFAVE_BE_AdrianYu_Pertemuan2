@@ -19,11 +19,14 @@ class ItemFactory extends Factory
     public function definition(): array
     {
         $faker = faker::create();
+        $faker->addProvider(new \Faker\Provider\Fakecar($faker));
+        $faker->addProvider(new \Xvladqt\Faker\LoremFlickrProvider($faker));
+
         return [
-            'name' => $faker->words(2, true),
-            'description' => $faker->sentence(5),
+            'name' => $faker->vehicle(),
+            'description' => $faker->vehicleBrand() . ' ' . $faker->vehicleType() . ' ' . $faker->vehicleGearBoxType(),
             'price' => $faker->numberBetween(10000, 100000),
-            'picture' => $faker->image(public_path('storage/images'), 200, 200, 'item', false),
+            'picture' => $faker->image(public_path('storage/images'), 200, 200, ['car'], false),
             'created_at' => now(),
             'updated_at' => now()
         ];
